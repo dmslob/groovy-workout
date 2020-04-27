@@ -21,14 +21,9 @@ class AccountTest {
 
     @Test
     void tortTest() {
-        def tort = new Tort()
-        tort.setName("Praga")
-        tort.weigh = 1
-        println tort.weigh
-    }
-}
+        def account = new Account(name: "Account #1", value: new BigDecimal(10))
+        def newAccount = account
 
-class Tort {
-    String name
-    private Integer weigh
+        assert account.is(newAccount)
+    }
 }

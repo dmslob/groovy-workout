@@ -26,11 +26,11 @@ class OperatorTest {
 
         def x = [2, 3]
         def y = [0, 1, *x, 4]
-        println y
+        println y.getClass()
 
         def a = [3: 'c', 4: 'd']
         def b = [1: 'a', 2: 'b', *: a, 5: 'e']
-        println b
+        println b.getClass()
     }
 
     @Test
